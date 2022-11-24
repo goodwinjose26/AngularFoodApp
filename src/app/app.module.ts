@@ -7,7 +7,21 @@ import { MenuComponent } from './menu/menu.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { RouterModule, Routes } from '@angular/router';
+const myRoute:Routes=[
+  {
+    path:"",
+    component:MenuComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"registration",
+    component:RegistrationComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +32,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
