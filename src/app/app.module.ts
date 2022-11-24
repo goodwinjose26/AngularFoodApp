@@ -8,6 +8,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { OrderComponent } from './order/order.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -20,6 +21,10 @@ const myRoute:Routes=[
   {
     path:"registration",
     component:RegistrationComponent
+  },
+  {
+    path:"order",
+    component:OrderComponent
   }
 ]
 @NgModule({
@@ -28,7 +33,8 @@ const myRoute:Routes=[
     MenuComponent,
     RegistrationComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
