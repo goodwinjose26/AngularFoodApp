@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
+  name=""
+  email=""
+  password=""
+  cpassword=""
 
+
+
+  regValues =()=>
+  {
+    let data:any =
+    {
+"name":this.name,"email":this.email,"password":this.password,"cpassword":this.cpassword
+    }
+    console.log(data)
+  }
 }

@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  email=""
+  password=""
+
+  
+  loginValues=()=>
+  {
+    let data:any =
+    {
+      "email":this.email,"password":this.password
+    }
+    console.log(data)
+  }
+
 
 }

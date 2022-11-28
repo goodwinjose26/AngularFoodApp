@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent {
+  name=""
+  date=""
+  address=""
+
+  
+  orderValues=()=>
+  {
+    let data:any =
+    {
+      "name":this.name,"date":this.date,"address":this.address
+    }
+    console.log(data)
+  }
+
 
 }
